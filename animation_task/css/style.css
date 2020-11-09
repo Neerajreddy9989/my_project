@@ -1,0 +1,77 @@
+
+.popup {
+    display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 10;
+  }
+
+  .popup-image {
+      position: absolute;
+    background: #fff;
+      width: 98%;
+      height: 100%;
+      z-index: 11;
+
+  }
+  .close-popup {
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    right: -30px;
+    font-size: 42px;
+  }
+  
+
+  .fadeIn {
+    animation: fadeIn 0.5s ease-in both;
+    -webkit-animation: fadeIn 0.5s ease-in both;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+  }
+  @-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+  }
+  
+  .fadeOut {
+    animation: fadeOut 0.5s ease-out both;
+    -webkit-animation: fadeOut 0.5s ease-out both;
+  }
+  @keyframes fadeOut {
+    to { opacity: 0; }
+  }
+  @-webkit-keyframes fadeOut {
+    to { opacity: 0; }
+  }
+
+  
+.top-img img{
+   padding: 10px 180px;
+   margin : 2px 130px;
+   height: 100px;
+   width: 80%;
+   border-radius: 15%;
+}
+
+
+
+  .popup {
+      -webkit-perspective: 1200px;
+      -moz-perspective: 1200px;
+      perspective: 1200px;
+  }
+  .popup-image {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform: translate3d(0,0,0);
+      -moz-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+  }
